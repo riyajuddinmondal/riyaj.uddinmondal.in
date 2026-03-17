@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyajuddin Mondal</title>
+    <style>
+        /* 1. Define the custom font */
+        @font-face {
+            font-family: 'MyCustomFont';
+            src: url('font.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 2. Apply font and background */
+        body {
+            font-family: 'MyCustomFont', sans-serif; /* Fallback to sans-serif if font fails */
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            /* Background logic for 3452×5184 image */
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .glass-card {
+            background: rgba(0, 0, 0, 0.45); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 50px 40px;
+            border-radius: 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            width: 90%;
+            max-width: 380px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-bottom: 35px;
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 16px;
+            border-radius: 15px;
+            font-size: 18px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:hover {
+            background: #ffffff;
+            color: #000000;
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <h1>Riyajuddin Mondal</h1>
+        <div class="link-container">
+            <a href="https://riyaj.uddinmondal.in/links" class="btn">Links</a>
+            <a href="https://riyaj.uddinmondal.in/about" class="btn">About</a>
+        </div>
+    </div>
+
+</body>
+</html>
