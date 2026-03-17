@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Riyajuddin Mondal</title>
+    
+    <link rel="icon" type="image/x-icon" href="https://riyaj.uddinmondal.in/favicon.ico">
+
+    <style>
+        /* Define custom font from your absolute URL */
+        @font-face {
+            font-family: 'MyCustomFont';
+            src: url('https://riyaj.uddinmondal.in/font.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'MyCustomFont', sans-serif;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            /* Remote Background Image */
+            background-image: url('https://riyaj.uddinmondal.in/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .glass-card {
+            background: rgba(0, 0, 0, 0.45); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 50px 40px;
+            border-radius: 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            width: 90%;
+            max-width: 480px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 30px;
+            border: 3px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-details {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            color: white;
+            font-size: 16px;
+            margin-bottom: 25px;
+            text-align: center;
+            list-style-type: none;
+        }
+
+        .details-item {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 12px 18px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .details-item::before {
+            content: "● ";
+            color: white;
+            font-weight: bold;
+        }
+
+        .ps-text {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+            margin-bottom: 35px;
+            font-style: italic;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            opacity: 0.7;
+            transition: 0.3s;
+            padding: 10px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <img src="Profile_Picture.png" alt="Riyajuddin Mondal" class="profile-pic">
+
+        <ul class="about-details">
+            <li class="details-item">A Denizen of India</li>
+            <li class="details-item">Professionally Healthmender, Preceptor, Yieldmancer</li>
+            <li class="details-item">Adjectives: Epistemophile, Dilettante, Itinerant</li>
+        </ul>
+
+        <p class="ps-text">P.S. - I don't use any Personal Social Media</p>
+
+        <a href="https://riyaj.uddinmondal.in/" class="back-link">← Back to Home</a>
+    </div>
+
+</body>
+</html>
