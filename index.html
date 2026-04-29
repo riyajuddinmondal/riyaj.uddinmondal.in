@@ -8,7 +8,6 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <style>
-        /* 1. Define the custom font */
         @font-face {
             font-family: 'MyCustomFont';
             src: url('font.ttf') format('truetype');
@@ -23,7 +22,6 @@
             padding: 0;
         }
 
-        /* 2. Layout & Background */
         body {
             font-family: 'MyCustomFont', sans-serif;
             height: 100vh;
@@ -31,8 +29,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            /* Background logic for 3452×5184 image */
             background-image: url('background.jpg');
             background-size: cover;
             background-position: center;
@@ -41,7 +37,6 @@
             overflow: hidden;
         }
 
-        /* 3. The Glass Card */
         .glass-card {
             background: rgba(0, 0, 0, 0.45); 
             backdrop-filter: blur(12px);
@@ -57,9 +52,17 @@
 
         h1 {
             color: #ffffff;
-            margin-bottom: 35px;
+            margin-bottom: 5px;
             font-size: 32px;
             letter-spacing: 1px;
+        }
+        
+        h2 {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
         }
 
         .link-container {
@@ -69,13 +72,15 @@
         }
 
         .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 30px;
-            border: 3px solid white;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            width: 180px;
+            height: 180px;
+            margin-bottom: 25px;
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 15px;
+            object-fit: contain;
+            background: transparent;
         }
 
         .btn {
@@ -87,7 +92,7 @@
             font-size: 18px;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            font-family: 'MyCustomFont', sans-serif; /* Ensuring buttons use the font too */
+            font-family: 'MyCustomFont', sans-serif;
         }
 
         .btn:hover {
@@ -103,9 +108,10 @@
     <div class="glass-card">
         <img src="Profile_Picture.png" alt="Riyajuddin Mondal" class="profile-pic">
         <h1>RIYAJUDDIN MONDAL</h1>
+        <h2>Healthmender & Preceptor</h2>
         <div class="link-container">
-            <a href="/links" class="btn">Links</a>
-            <a href="/about" class="btn">About</a>
+            <a href="https://drriyaj.uddinmondal.in" class="btn">Healthcare Portfolio</a>
+            <a href="https://mrriyaj.uddinmondal.in" class="btn">Educational Portfolio</a>
         </div>
     </div>
 
